@@ -1,0 +1,30 @@
+{
+  "name": "next-on-pages-app-13.2.4-route-group",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clearnpx": "npx clear-npx-cache",
+    "npx-next-on-pages": "npx @cloudflare/next-on-pages",
+    "npx-next-on-pages-minify": "npx @cloudflare/next-on-pages --experimental-minify",
+    "nop": "npm run npx-next-on-pages",
+    "nopw": "npm run npx-next-on-pages -- --watch",
+    "nopm": "npm run npx-next-on-pages-minify",
+    "nopmw": "npm run npx-next-on-pages-minify -- --watch",
+    "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat",
+    "publish": "npx wrangler pages publish .vercel/output/static"
+  },
+  "dependencies": {
+    "@cloudflare/next-on-pages": "^0.6.0",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.3"
+  }
+}
